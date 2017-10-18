@@ -17,16 +17,20 @@ public class CounterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_counter);
 
-        TextView num = (TextView) findViewById(R.id.number);
-        int con=0;
+        num = (TextView) findViewById(R.id.number);
+        con=0;
     }
 
 
     public void plus(View view) {
+        con++;
+        num.setText(String.format("%d",con));
 
     }
 
     public void minus(View view) {
+        con--;
+        num.setText(String.format("%d",con));
     }
 
     public void exit(View view) {
