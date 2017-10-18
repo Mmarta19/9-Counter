@@ -34,5 +34,7 @@ public class CounterActivity extends AppCompatActivity {
     }
 
     public void exit(View view) {
+        finish();
+
     }
 }
